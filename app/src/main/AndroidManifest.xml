@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.nrs">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_nrs"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ics.nrs.SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ics.nrs.MainActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name="com.ics.nrs.Login" />
+        <activity android:name="com.ics.nrs.Register" />
+        <activity
+            android:name="com.ics.nrs.NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.ics.nrs.Feedback" />
+        <activity android:name="com.ics.nrs.ComplaintList" />
+        <activity android:name="com.ics.nrs.StaffProfile" />
+        <activity android:name="com.ics.nrs.ProductRo" />
+        <activity android:name="com.ics.nrs.SpareProduct" />
+        <activity android:name="com.ics.nrs.NewFeedbackActivity" />
+        <activity android:name="com.ics.nrs.UserLoginActivity" />
+        <activity android:name="com.ics.nrs.OtpActivity" />
+        <activity android:name="com.ics.nrs.ForgetPasswordActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ics.nrs.VerificationActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+    </application>
+
+</manifest>

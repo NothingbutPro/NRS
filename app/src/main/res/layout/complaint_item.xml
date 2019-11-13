@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/mobile_no"
+                android:text="Mobile No."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/location"
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+           <!-- <TextView
+                android:id="@+id/complaintId"
+                android:text="Complaint Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+            <TextView
+                android:id="@+id/prod_name"
+                android:text="Product Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="0.50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_weight="0.50"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/feedback_complaint"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/feedback_image"
+                    android:textColor="#fff"
+                    android:text="Feedback"/>
+            </LinearLayout>
+           <!-- <LinearLayout
+                android:layout_weight="0.50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/status"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/closed"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Pending"/>
+            </LinearLayout>-->
+
+
+
+            <FrameLayout
+                android:layout_weight="0.50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/pending"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/closed"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Pending"/>
+               <!-- <ImageView
+                    android:id="@+id/status"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/status"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#f00"
+                    android:text="Pending"/>-->
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/closed"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/closed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-25dp"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Closed"/>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+       <!-- <LinearLayout
+            android:layout_weight="0.33"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="0.34"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/mobile_no"
+                android:text="Mobile No."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/location"
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/complaintId"
+                android:text="Complaint Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="0.33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_weight="0.50"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/feedback_complaint"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/feedback_image"
+                android:textColor="#fff"
+                android:text="Feedback"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/status"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/status"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Pending"/>
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
